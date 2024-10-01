@@ -1,0 +1,359 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    166deg,
+    rgb(39, 57, 105),
+    rgb(60, 110, 179),
+    rgb(122 153 208)
+  );
+  position: relative;
+  overflow-x: hidden;
+}
+.container.light {
+  background-image: linear-gradient(
+    191deg,
+    rgb(176, 76, 17),
+    rgb(255, 151, 77),
+    rgb(237, 173, 37)
+  );
+}
+.container.light {
+  background-image: linear-gradient(
+    194deg,
+    rgb(131, 194, 186),
+    rgb(221, 212, 173),
+    rgb(244, 211, 157)
+  );
+}
+.setting {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 25px;
+}
+
+.setting .logo {
+  width: 80px;
+  height: 80px;
+  margin-left: -20px;
+}
+.setting .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.settings-container {
+  position: fixed;
+  right: -300px;
+  bottom: 20px;
+  backdrop-filter: blur(100px);
+  background-color: #ffffff34;
+  padding: 30px 20px;
+  width: 300px;
+  height: calc(100% - 100px);
+  border-radius: 10px;
+  z-index: 100;
+  transition: 0.3s;
+}
+.settings-container.full-width {
+  right: 5%;
+}
+.settings-container .dark-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+  padding: 0 5px 20px 5px;
+}
+.settings-container .dark-light h3 {
+  font-weight: 500;
+  font-size: 15px;
+  width: 60%;
+  color: white;
+}
+.settings-container .dark-light input {
+}
+.setting i {
+  cursor: pointer;
+}
+
+.landing {
+  width: 90%;
+  margin: 30px auto;
+}
+.container svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container.light svg path {
+  fill: #b04c11;
+  fill: #fdbe71;
+}
+
+/* Start Next Prayer */
+.next-prayer > p {
+  color: rgba(255, 255, 255, 0.598);
+  margin-bottom: 10px;
+}
+.next-prayer h1.pray-name {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+.next-prayer h1.pray-name span.spcific-time {
+  color: rgba(255, 255, 255, 0.598);
+}
+.next-prayer .date-ah {
+  color: white;
+  margin-top: 10px;
+}
+/* END Next Prayer */
+/* START images holder TIME  */
+.time-images {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.time-images .holder {
+  text-align: center;
+}
+.time-images .holder .img-container {
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.time-images .holder .img-container:hover img {
+  transform: scale(1.5);
+}
+.time-images .holder .img-container img {
+  transition: 0.3s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.time-images .holder span {
+  margin-top: 10px;
+  display: block;
+  color: white;
+  font-size: 13px;
+}
+/* END images holder TIME  */
+
+/* Strat all prayes timeS*/
+.prayers-times {
+  width: 70%;
+  margin-top: 50px;
+  z-index: 20;
+  position: relative;
+}
+
+.prayers-times .country-date {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.prayers-times .country-date .day {
+  font-weight: 500;
+  font-size: 20px;
+}
+.prayers-times .country-date i {
+  background-color: white;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  display: block;
+  text-align: center;
+  line-height: 17px;
+  color: rgb(60, 110, 179);
+  font-weight: bold;
+}
+.prays-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.prayers-times .pray-box {
+  backdrop-filter: blur(150px);
+  min-width: 30%;
+  min-height: 105px;
+  background-color: #ffffff34;
+  padding: 7px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prayers-times .pray-box.dark {
+  background-color: #24242480;
+  color: white;
+}
+.prayers-times .pray-box:hover {
+  transform: scale(1.051);
+}
+.prayers-times .pray-box i {
+  margin-left: auto;
+  width: fit-content;
+  border-radius: 5px;
+  display: block;
+  color: white;
+  /* background-color: #0c8af8; */
+  background-color: #0888fa;
+}
+.prayers-times .pray-box .pray {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2px;
+}
+.prayers-times .pray-box .pray .name {
+  font-weight: bold;
+}
+.prayers-times .pray-box .pray .time {
+  font-size: 13px;
+}
+@media (max-width: 770px) {
+  .prayers-times {
+    width: 100%;
+  }
+  .prayers-times .pray-box {
+    min-width: 40%;
+  }
+}
+/* END all prayes timeS */
+label {
+  width: 70px;
+  height: 25px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+label:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 3.5px;
+  left: 7.5px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input:checked + label {
+  background: #242424;
+}
+input:checked + label:after {
+  left: 63.5px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label,
+label:after {
+  transition: 0.3s;
+}
+label:active:after {
+  width: 30px;
+}
+
+/* mountain hex #491104 */
+
+.select-contry {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  backdrop-filter: blur(200px);
+  box-shadow: 0 0 5px #0888fa;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.select-contry i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.select-contry .box-holder {
+  position: absolute;
+  backdrop-filter: blur(200px);
+  background-color: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 0 5px #0888fa;
+  border-radius: inherit;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.3s;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.select-contry .box-holder.show {
+  padding: 20px 10px;
+  height: fit-content;
+}
+.select-contry span {
+  cursor: pointer;
+  box-shadow: 0 0 4px #0888fa;
+  background-color: white;
+  color: #242424;
+  padding: 3px 7px;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+.select-contry span:hover {
+  background-color: #2424248a;
+  color: white;
+  box-shadow: 0 0 5px #0888fa;
+  transform: scale(1.031);
+}
+
+.set-contry {
+}
+.set-contry input {
+}

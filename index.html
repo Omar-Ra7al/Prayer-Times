@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Googel Fonts -->
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="event.js" defer></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container light">
+        <!-- Start Next Prayer -->
+        <div class="landing">
+            <div class="setting">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+                <i class="uil uil-cog"></i>
+            </div>
+            <div class="settings-container">
+                <div class="dark-light">
+                    <h3>Change App Mode</h3>
+                    <input type="checkbox" id="darkmode-toggle" />
+                    <label for="darkmode-toggle">
+                    </label>
+                </div>
+                <div class="dark-light items">
+                    <h3>Change Items Mode</h3>
+                    <input type="checkbox" id="darkmode-toggle-items" />
+                    <label for="darkmode-toggle-items">
+                    </label>
+                </div>
+                <div class="select-contry">
+                    <p class="text">
+                        Select Contry
+                    </p>
+                    <i class="uil uil-arrow"></i>
+                    <div class="box-holder">
+                        <span>Cairo</span>
+                        <span>Alexandria</span>
+                        <span>Damnhour</span>
+                    </div>
+                </div>
+                <!-- <div class="set-contry">
+                    <input type="text">
+                    <button>Get</button>
+                </div> -->
+                <!-- <select name="" id="opt">
+                    <option id="opt" value="Cairo">Cairo</option>
+                    <option id="opt" value="Alexandria">Alexandria</option>
+                    <option id="opt" value="Damnhour">Damnhour</option>
+                </select> -->
+            </div>
+
+            <div class="next-prayer">
+                <p>Next Prayer</p>
+                <div class="pray-details">
+                    <h1 class="pray-name">
+                        Maghrib <span class="spcific-time">22:29</span>
+                    </h1>
+                    <div class="date-ah">
+                        <P>
+                            Rajab 29, 144 AH
+                        </P>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End Next Prayer -->
+            <!-- strat images holder TIME -->
+            <div class="time-images">
+
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/sunest.jpg" alt="">
+                    </div>
+                    <span class="Sunrise">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/duhr.jpg" alt="">
+                    </div>
+                    <span class="Dhuhr">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/duhr2.jpg" alt="">
+                    </div>
+                    <span class="Asr">12:00</spanc>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/asr.jpg" alt="">
+                    </div>
+                    <span class="Asr">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/night.jpg" alt="">
+                    </div>
+                    <span class="Maghrib">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/isha.jpg" alt="">
+                    </div>
+                    <span class="Isha">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/fajr.jpg" alt="">
+                    </div>
+                    <span class="Midnight">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/night.jpg" alt="">
+                    </div>
+                    <span class="Fajr">12:00</span>
+                </div>
+                <div class="holder">
+                    <div class="img-container">
+                        <img src="imgs/sunrise.jpg" alt="">
+                    </div>
+                    <span class="Sunset">12:00</span>
+                </div>
+            </div>
+            <!-- END images holder TIME -->
+            <!-- Strat all prayes time -->
+
+            <div class="prayers-times">
+                <div class="country-date">
+                    <span class="day">Today</span>
+                    <span class="country">London</span>
+                    <i class="uil uil-check"></i>
+                </div>
+                <div class="prays-holder">
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Fajr</p>
+                            <span class="Fajr">04:38</span>
+                        </div>
+                    </div>
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Sunrise</p>
+                            <span class="Sunrise">12:00</span>
+
+                        </div>
+                    </div>
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Dhuhr</p>
+                            <span class="Dhuhr">12:00</span>
+                        </div>
+
+                    </div>
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Asr</p>
+                            <span class="Asr">12:00</span>
+                        </div>
+                    </div>
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Magrip</p>
+                            <span class="Maghrib">12:00</span>
+                        </div>
+                    </div>
+                    <div class="pray-box">
+                        <i class="uil uil-music-note"></i>
+                        <div class="pray">
+                            <p class="name">Isha</p>
+                            <span class="Isha">12:00</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- END all prayes time -->
+
+            </div>
+
+
+            <!-- Svg wavey -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="    #273969" fill-opacity="1"
+                    d="M0,288L24,266.7C48,245,96,203,144,170.7C192,139,240,117,288,128C336,139,384,181,432,186.7C480,192,528,160,576,154.7C624,149,672,171,720,154.7C768,139,816,85,864,58.7C912,32,960,32,1008,69.3C1056,107,1104,181,1152,208C1200,235,1248,213,1296,186.7C1344,160,1392,128,1416,112L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+</body>
+
+</html>
